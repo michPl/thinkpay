@@ -1,0 +1,41 @@
+{
+  "name": "thinkpay",
+  "version": "1.0.0",
+  "description": "test challenge",
+  "main": "builds/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint **/src/**/*.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf builds",
+    "start": "node builds/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/michPl/thinkpay.git"
+  },
+  "keywords": [
+    "thinkpay",
+    "test"
+  ],
+  "author": "michPl <plehanov_michael@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michPl/thinkpay/issues"
+  },
+  "homepage": "https://github.com/michPl/thinkpay#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^12.7.5",
+    "@types/redis": "^2.8.13",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.6.3"
+  }
+}

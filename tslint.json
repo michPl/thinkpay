@@ -1,0 +1,30 @@
+{
+    "extends": ["tslint:latest", "tslint-eslint-rules"],
+    "rules": {
+      "curly": [true, "ignore-same-line"],
+      "interface-name": true,
+      "max-classes-per-file": [true, 1],
+      "member-ordering": false,
+      "no-console": false,
+      "no-empty": true,
+      "no-submodule-imports": false,
+      "object-literal-sort-keys": false,
+      "ordered-imports": false,
+      "prefer-for-of": false,
+      "variable-name": [
+        true,
+        "check-format",
+        "allow-pascal-case",
+        "allow-leading-underscore"
+      ],
+      "max-line-length": [true, 120],
+      "handle-callback-err": true,
+      "quotemark": [true, "single"],
+      "no-extra-semi": true,
+      "trailing-comma": false,
+      "arrow-parens": false
+    },
+    "linterOptions": {
+      "exclude": ["node_modules", "builds"]
+    }
+  }
