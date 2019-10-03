@@ -1,5 +1,5 @@
 interface IGenerator {
-  start(): void;
+  start(): Promise<void>;
   stop(): void;
 }
 
